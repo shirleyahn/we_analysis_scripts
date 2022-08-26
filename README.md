@@ -15,8 +15,8 @@ make copies of west.h5 in case the main one gets ruined)
 hydrogen bonds that have lengths less than 3.5 angstroms
   (get_target_trajs.py and note that this particular salt bridge /
 hydrogen bond was kept track of as auxdata during the WE simulation) 
-and plot contact frequency over one of the progress coordinates in 
-WE (pdf.py).
+and plot contact frequency (probability distribution function) over
+one of the progress coordinates in WE (pdf.py).
 - durations folder: includes scripts that extract iteration #s and
 segment #s that correspond to when and which segment/walker made
 the transition of interest (e.g., going from A to B), the weights
@@ -38,3 +38,9 @@ traj.sh will trace a particular iteration # and segment # so
 that it obtains all of the past conformations of this particular
 segment/walker. runtraj.sh is the main script to execute with a
 list of iteration #s and segment #s like up_pathways.txt.
+- w_crawl folder: includes scripts for w_crawl, which "crawls"
+through west.h5 to extract properties from trajectories, such as
+alpha carbon coordinates, etc. runcrawl.sh is the main script
+to execute/submit and wcrawl_functions.py is the main script to
+edit to obtain the property of interest. Afterward, copy_h5_dataset.py
+can be used to concatenate the resulting h5 file to west.h5.
