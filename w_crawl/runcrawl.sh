@@ -30,5 +30,5 @@ export PYTHONPATH=/scratch/07418/s3ahn/mdtraj/lib/python3.7/site-packages:/scrat
 source env.sh || exit 1
 env | sort
 SERVER_INFO=$WEST_SIM_ROOT/west_zmq_info-$SLURM_JOBID.json
-w_crawl wcrawl_functions2.calculate -c wcrawl_functions2.crawler -W west.h5 --debug --first-iter=1 --last-iter=100 --work-manager=processes --n-workers=40 &> w_crawl.log &
+w_crawl wcrawl_functions_ca_coords.calculate -c wcrawl_functions_ca_coords.crawler -W west.h5 --debug --first-iter=1 --last-iter=100 --work-manager=processes --n-workers=40 &> w_crawl.log &
 wait
