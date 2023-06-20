@@ -11,7 +11,7 @@ walltime for the WE simulation of interest using west.h5
 of progress coordinate values - useful to keep track of progress
 of your currently running WE simulation (useful tip: periodically
 make copies of west.h5 in case the main one gets ruined)
-- autocorrelation_function.py: calculates the autocorrelation of /
+- autocorrelation_function.py: calculates the autocorrelation of
 the property of interest, such as arrivals from state A to state B
 (arrivals.txt). the confidence interval is generated using a 
 Monte Carlo bootstrapping strategy where a boostrap consists of 
