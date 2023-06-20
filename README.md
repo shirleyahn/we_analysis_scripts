@@ -12,14 +12,14 @@ of progress coordinate values - useful to keep track of progress
 of your currently running WE simulation (useful tip: periodically
 make copies of west.h5 in case the main one gets ruined)
 - autocorrelation_function.py: calculates the autocorrelation of /
-the property of interest, such as arrivals from state A to state B.
-the confidence interval is generated using a Monte Carlo 
-bootstrapping strategy where a boostrap consists of 1000 randomly
-drawn datasets (with replacement) (autocorrelation_function.txt). 
-this can be used, for instance, to see where the first point of 
-the autocorrelation fails within the confidence interval 
-(printed from the script) and can be used to calculate the 
-correlation time. 
+the property of interest, such as arrivals from state A to state B
+(arrivals.txt). the confidence interval is generated using a 
+Monte Carlo bootstrapping strategy where a boostrap consists of 
+1000 randomly drawn datasets (with replacement) (printed from 
+script). this can be used, for instance, to see where the 
+first point of the autocorrelation (autocorrelation_function.txt)
+falls within the confidence interval and can be used to calculate 
+the correlation time. 
 - contact_freq folder: includes scripts that extract salt bridges /
 hydrogen bonds that have lengths less than 3.5 angstroms
   (get_target_trajs.py and note that this particular salt bridge /
