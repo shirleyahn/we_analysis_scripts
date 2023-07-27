@@ -33,12 +33,18 @@ of those corresponding segments/walkers, and the duration of
 those transitions. The main script to execute is plot_duration.py.
 Make sure to change the TODOs in plot_duration.py. The script
 will also generate a distribution plot of durations in PDF form.
+- free_energy_plots folder: includes scripts that can plot
+smoother, more customizable free energy plots compared to the 
+default WESTPA free energy plots
 - pdist_plots folder: includes scripts that generate bins for
 w_pdist when values are negative (default w_pdist will not work
 in this case so use bins.py). The user can copy and paste the 
 output from bins.py as the first line for w_pdist_rbdc_elec.sh.
 Make sure that plotting.py is pulling the same data as in
 bins.py!
+- rate_plots folder: includes scripts that can extract rates
+from direct.h5 (from w_ipa -ao -W west.h5) and calculate the 
+average from three independent runs
 - traj_concatenate folder: includes scripts that concatenate 
 iterations to make a trajectory. Often times, we will end up
 with a list of iteration #s and segment #s (e.g., from durations 
@@ -52,4 +58,4 @@ through west.h5 to extract properties from trajectories, such as
 alpha carbon coordinates, etc. runcrawl.sh is the main script
 to execute/submit and wcrawl_functions.py is the main script to
 edit to obtain the property of interest. Afterward, copy_h5_dataset.py
-can be used to concatenate the resulting h5 file to west.h5.
+ran be used to concatenate the resulting h5 file to west.h5.
